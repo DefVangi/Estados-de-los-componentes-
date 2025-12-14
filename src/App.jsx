@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer';
-
+import Register from './components/Register'; 
+import Login from './components/Login';       
 export default function App() {
   const [token, setToken] = useState(true); 
   
@@ -15,7 +16,7 @@ export default function App() {
       
       <Navbar token={token} total={total} />
       
-      <div className="bg-gray-200 p-4 text-center">
+      {/*<div className="bg-gray-200 p-4 text-center">
         <p className="mb-2 text-gray-800">
           Estado actual: <strong>{token ? 'Logueado 🔓' : 'No Logueado 🔐'}</strong>
         </p>
@@ -25,9 +26,11 @@ export default function App() {
         >
           Cambiar Estado (Simular Login/Logout)
         </button>
-      </div>
+      </div>*/}
 
-      <Home />
+      {/*<Home />*/}
+      <Register />
+      {/*<Login />*/}
       <Footer />
       
     </div>
